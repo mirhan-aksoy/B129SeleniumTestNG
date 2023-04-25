@@ -1,6 +1,5 @@
-package techproed.test.day22_Annotation;
+package techproed.tests.day22_Annotation;
 
-import org.checkerframework.checker.signature.qual.DotSeparatedIdentifiersOrPrimitiveType;
 import org.testng.annotations.*;
 
 public class C01_Anotation {
@@ -66,4 +65,28 @@ gorecegiz.
     public void afterSuite() {
         System.out.println("After Suite");
     }
+    /*
+    --TestNG de @BeforeGroups,@AfterGroups,@FindBy gibi notasyonlarda vardir bunlari ileriki konularda
+gorecegiz.
+--jUnit'te @BeforeClass ve @AfterClass notasyonuna sahip methodlar static olmak ZORUNDAYDI.
+TestNG frameworkunde boyle bir zorunluluk yoktur.
+ Before Suite
+Before Test
+Before Class
+Before Method
+Test 1 Çalıştı
+After Method
+Before Method
+Test 2 Çalıştı
+After Method
+Before Method
+Test 3 Çalıştı
+After Method
+Before Method
+Test 4 Çalıştı
+After Method
+After Class
+After Test
+After Suite
+     */
 }
