@@ -5,9 +5,10 @@ import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 public class NegativeTest {
     @Test
-    public void test1() throws InterruptedException {
+    public void test1(){
         /*
         Description:
         Kullanimda olmayan kullanıcı adi ve şifre ile giriş yapilamamali
@@ -23,7 +24,8 @@ public class NegativeTest {
         blueRentalPage.email.sendKeys(ConfigReader.getProperty("fakeEmail"),
                 Keys.TAB,ConfigReader.getProperty("fakepass"));
         blueRentalPage.login2.click();
-        Thread.sleep(3000);
+        ReusableMethods.bekle(3);
+        ReusableMethods.tumSayfaResmi();
         Assert.assertTrue(blueRentalPage.hataMesaji.isDisplayed());
         Driver.closeDriver();
     }
