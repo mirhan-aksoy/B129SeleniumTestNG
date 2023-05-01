@@ -9,6 +9,10 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class C04_DataProvider {
+    @DataProvider
+    public static Object[][] googleTest() {
+        return new Object[][]{{"Volvo"}, {"Mercedes"}, {"Audi"}, {"Honda"}, {"Toyota"}, {"Opel"}, {"BMW"}};
+    }
 
 
 
@@ -34,7 +38,7 @@ public class C04_DataProvider {
 
     }
 
-    @DataProvider(name = "googleTest")
+    @DataProvider
     public static Object[][] urunler() {
         return new Object[][]{{"Volvo"}, {"Mercedes"}, {"Audi"}, {"Honda"}, {"Toyota"}, {"Opel"}, {"BMW"}};
     }
