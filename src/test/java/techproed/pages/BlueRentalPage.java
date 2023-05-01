@@ -4,6 +4,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 public class BlueRentalPage {
+    /*
+    TESTLERİMİZ: TEST PACKAGE ALTINDA
+    LOCATELERİMİZ:PAGES PACKAGE ALTINDA
+    AYARLAMALARI YAPTIĞIMIZ VE METHODLAR OLUŞTURDUĞUMUZ CLASSLAR UTILITIES ALTINDA
+     */
     public BlueRentalPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
