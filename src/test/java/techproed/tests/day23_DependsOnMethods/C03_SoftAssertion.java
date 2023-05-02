@@ -56,6 +56,7 @@ public class C03_SoftAssertion {
         System.out.println("Gerçek sonuç Iphone olmalı");
         softAssert.assertAll();
         System.out.println("Test sonuçlandı");//Bunu yazdırmaz
+        driver.close();
 
     }
 

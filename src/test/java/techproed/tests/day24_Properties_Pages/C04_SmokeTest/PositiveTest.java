@@ -1,4 +1,4 @@
-package techproed.tests.day24_Properties_Pages.SmokeTest;
+package techproed.tests.day24_Properties_Pages.C04_SmokeTest;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import techproed.pages.BlueRentalPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 public class PositiveTest {
-    @Test
+    @Test(groups = "smoke")
     public void test1() {
         /*
         Acceptance Criteria:
@@ -21,5 +21,6 @@ public class PositiveTest {
         blueRentalPage.email.sendKeys(ConfigReader.getProperty("email"),
                 Keys.TAB,ConfigReader.getProperty("pass"),Keys.ENTER);
         Assert.assertEquals(blueRentalPage.verify.getText(),"Jack Nicholson");
+        Driver.closeDriver();
     }
 }
