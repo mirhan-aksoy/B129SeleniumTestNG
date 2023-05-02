@@ -1,0 +1,70 @@
+1-Amaç(Utilities Class);
+sürdürülebilir (maintainable), yeniden kullanılabilir (reusable),
+daha hızlı (faster), anlaşılabilir (understandable) bir framework
+dizayn etmek
+
+
+2-TestNG'de PageObjectModel kullaniliyor
+
+----------DATA PROVIDER--------------
+
+3-DATA PROVIDER==>Birden fazla veriyi test etmek istediginde, daha onceden yaptigin gibi list icine atip donguye atmana
+ gerek kalmiyor. Data provider ile verileri iki boyutlu bir Array'in icine koyuyorsun, her data icin  bir
+ test methodu kullaniyor gibi bu verileri test ediyor.
+
+4-DATA PROVIDER==> da bir ozellik var, Array'e koydugun herseyi ayri ayri calistiriyor.
+
+5-Test Methodunda bilgiler(email, password vs.) gozukmesin istiyorsak, ConfigReader ve Excel'den de cekebiliriz verileri.
+
+6-@Dataprovider(name= testAdi) ==> boyle bir kullanim gorursen, bu su durumda oluyor. Iki test methodu varsa
+dataProvider'i ozellestirmis oluyoruz
+
+
+7- POM=> Page Object Model, Bu TestNG'nin mantiginda olan husus.
+
+
+ 9-/*
+       TESTLERİMİZ: TEST PACKAGE ALTINDA
+       LOCATELERİMİZ:PAGES PACKAGE ALTINDA
+       UTILITIES: AYARLAMALARI YAPTIĞIMIZ VE METHODLAR OLUŞTURDUĞUMUZ CLASSLAR UTILITIES ALTINDA
+        */
+
+10-----------XML FILE
+xml file da istedigin package, method ve testi calistirabiliyorsun.
+/*
+Testng.xml dosyasini indirmek icin plugins install ok. Smoke test sag tikla
+createTesngXml tikla ok .File, reloadAll from disk tikla.Dosya projede olusur.
+ */
+
+ 11-<!--.xml file actiktan sonra ctrl+alt+L  tuslarina basarak .xml file'daki kodlari duzene koyariz -->
+         <!--.xml file actiktan sonra ctrl+alt+L  tuslarina basarak .xml file'daki kodlari duzene koyariz -->
+         <!-- .xml file da ilk tag <suite> sonra <test> olarak devam eder-->
+         <!-- .xml file ile bu class'ta sadece package olarak test yapacağımız için <classes> tag'lerine gerek yoktur-->
+         <!--yukardaki path kopyalama kismindan sonra / salash'lari nokta yaotik -->
+         <!-- Sag tik yaptigimiz zaman run sekmesi gozukmuyorsa file-> save-all (ctrl+s) yapmamiz gerekir -->
+                 <!-- Testlerimizi xml file ile çalıştırmanın
+                         1. mantığı İsteğim classları tek seferde ve tek bir suite altında çalıştırabilmek
+                         2. mantığı isteğim package yada methodları tek sefer ve tek bir suite altında çalıştırabilmek
+                         -->
+
+
+ ---1=> xml'de "verbose="2" preserve-order="true"==> bu kismi silebiliriz, bunlar bizim class'larda calismayacak
+ ---2=> ""<class" bu sekilde acilan class tagini sonuna / koyarak kapatabiliriz "/>"
+ ---3=>include, dahil yani bu test veya methodu calistir demek
+ ---4=>exclude, bu testi veya methodu calistirma demek.
+ ---5=> package altinda istenirse exclude ve include class olusturulabilir
+
+
+ 12-Parallel testin amaci ayni anda birden fazla driverla test execute etmektir.
+    Bu sayede testler daha kisa surede bitirilebilir.
+
+13-<!--.xml file ile paralel test yapmak için projemizi öncelikle buna göre dizayn etmeliyiz
+           Çalışan testler birbirinden bağımsız olmalıdır.Bağımlılığı olan testler paralel çalıştırmada
+           hata verebilir.
+           Paralel test yapabilmek için öncelikle <suite> tag'ına parallel parametresi yazarız, sonrasinda
+           parallel parametresine class,method,tests gibi atamalarla hangi seviyede test yapacağını belirleriz
+           class -> Her bir işlem için bir class ile run eder. Çalıştığı class'ta işlem bitince sıradaki class'a geçer
+           method -> Her bir işlem için bir method ile run eder.
+           tests -> Her bir işlem için bir tes ile run eder-->
+14--thread-count = 2 neydi==>.xml file testlere baslarken kac tane browser acsin istersek, o sayiyi
+yaziyoruz.

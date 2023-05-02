@@ -4,6 +4,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 public class BlueRentalPage {
+    //normalde web elementleri locate için findelement kullanıyorduk
+    //Test NG de Page clasta kullanımı aşagıdaki gibi olur
+
     /*
     TESTLERİMİZ: TEST PACKAGE ALTINDA
     LOCATELERİMİZ:PAGES PACKAGE ALTINDA
@@ -26,7 +29,8 @@ public class BlueRentalPage {
     public WebElement login3;
     @FindBy(xpath = "//*[text()='Logout']")
     public WebElement logout;
-    @FindBy(xpath = "//*[text()='OK']")
+    //bu bir örnektir
+    @FindBy(xpath = "//*[text()='OK']")// Linklerin listesinin locati
     public WebElement ok;
 
 }
