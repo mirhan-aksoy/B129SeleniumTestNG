@@ -1,7 +1,8 @@
 package techproed.Tests.day01_practice;
 
-import Utilities.TestBase;
+
 import org.testng.annotations.Test;
+import techproed.Utilities.TestBase;
 
 public class C01_Priority extends TestBase {
 
