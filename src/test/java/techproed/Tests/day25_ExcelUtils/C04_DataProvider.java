@@ -4,9 +4,9 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import techproed.pages.GooglePage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
-import techproed.Utilities.ReusableMethods;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class C04_DataProvider {
     @DataProvider
@@ -54,7 +54,7 @@ public class C04_DataProvider {
         googlePage.aramaKutusu.sendKeys(araclar, Keys.ENTER);
 
         //Her aratmadan sonra sayfa resmi alınız
-        ReusableMethods.tumSayfaResmi();
+        ReusableMethods.tumSayfaResmi(result.getName());
         ReusableMethods.bekle(2);
         Driver.closeDriver();
 

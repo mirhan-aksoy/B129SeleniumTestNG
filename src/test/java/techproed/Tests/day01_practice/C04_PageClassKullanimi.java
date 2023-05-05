@@ -3,8 +3,8 @@ package techproed.Tests.day01_practice;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 import techproed.pages.FacebookPage;
 
 public class C04_PageClassKullanimi {

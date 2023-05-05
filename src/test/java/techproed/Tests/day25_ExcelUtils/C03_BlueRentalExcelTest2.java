@@ -2,10 +2,10 @@ package techproed.Tests.day25_ExcelUtils;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
-import techproed.Utilities.ExcelUtils;
-import techproed.Utilities.ReusableMethods;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
+import techproed.utilities.ExcelUtils;
+import techproed.utilities.ReusableMethods;
 public class C03_BlueRentalExcelTest2 {
     @Test
     public void test1() {

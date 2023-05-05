@@ -1,4 +1,4 @@
-package techproed.Utilities;
+package techproed.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -109,7 +109,7 @@ public class ReusableMethods {
     }
 
     //Tüm Sayfa ScreenShot
-    public static void tumSayfaResmi() {
+    public static void tumSayfaResmi(String name) {
         String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
         String dosyaYolu = "TestOutput/screenshot/screenshot" + tarih + ".png";
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();

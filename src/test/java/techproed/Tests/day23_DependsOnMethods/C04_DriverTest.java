@@ -1,8 +1,8 @@
 package techproed.Tests.day23_DependsOnMethods;
 
 import org.testng.annotations.Test;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 
 public class C04_DriverTest {
     @Test

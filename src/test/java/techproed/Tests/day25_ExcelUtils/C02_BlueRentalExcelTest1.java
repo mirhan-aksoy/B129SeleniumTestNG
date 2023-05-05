@@ -3,9 +3,9 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
-import techproed.Utilities.ExcelUtils;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
+import techproed.utilities.ExcelUtils;
 public class C02_BlueRentalExcelTest1 {
     @Test
     public void excelTest() {

@@ -1,7 +1,7 @@
 package techproed.Tests.day24_Properties_Pages;
 import org.testng.annotations.Test;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 public class C01_ClassWork {
     @Test
     public void test1() {

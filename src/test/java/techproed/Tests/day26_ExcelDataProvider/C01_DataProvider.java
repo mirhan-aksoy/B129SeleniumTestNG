@@ -3,9 +3,9 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
-import techproed.Utilities.ReusableMethods;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 public class C01_DataProvider {
     @DataProvider
     public static Object[][] kullanicilar() {

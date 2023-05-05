@@ -4,8 +4,8 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.pages.TestCenterTechproPage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 
 
 public class C03_PageKullanimi {

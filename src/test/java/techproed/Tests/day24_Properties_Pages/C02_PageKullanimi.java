@@ -3,8 +3,8 @@ package techproed.Tests.day24_Properties_Pages;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.pages.OpenSourcePage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
 
 public class C02_PageKullanimi {
     @Test

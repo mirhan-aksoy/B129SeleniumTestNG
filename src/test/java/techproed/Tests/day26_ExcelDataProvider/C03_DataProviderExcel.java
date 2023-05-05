@@ -2,7 +2,7 @@ package techproed.Tests.day26_ExcelDataProvider;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
-import techproed.Utilities.*;
+import techproed.utilities.*;
 import java.util.Arrays;
 public class C03_DataProviderExcel {
     @Test

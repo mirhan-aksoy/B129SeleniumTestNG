@@ -1,6 +1,6 @@
 package techproed.Tests.day25_ExcelUtils;
 import org.testng.annotations.Test;
-import techproed.Utilities.ExcelUtils;
+import techproed.utilities.ExcelUtils;
 public class C01_ExcelTest1 {
     @Test
     public void excelTest1() {

@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import techproed.Utilities.TestBase;
+import techproed.utilities.TestBase;
 
 public class C03_softAssert extends TestBase {
 

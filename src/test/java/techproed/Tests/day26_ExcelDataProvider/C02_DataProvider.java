@@ -1,6 +1,6 @@
 package techproed.Tests.day26_ExcelDataProvider;
 import org.testng.annotations.Test;
-import techproed.Utilities.DataProviderUtils;
+import techproed.utilities.DataProviderUtils;
 public class C02_DataProvider {
 
     // Eger baska bir classta dataprovider'larimizi yaziyorsak

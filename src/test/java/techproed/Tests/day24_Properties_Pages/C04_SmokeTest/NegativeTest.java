@@ -3,9 +3,12 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRentalPage;
-import techproed.Utilities.ConfigReader;
-import techproed.Utilities.Driver;
-import techproed.Utilities.ReusableMethods;
+import techproed.utilities.ConfigReader;
+import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
+
+import static sun.net.www.http.KeepAliveCache.result;
+
 public class NegativeTest {
     @Test (groups = "smoke")
     public void test1(){
@@ -25,7 +28,7 @@ public class NegativeTest {
                 Keys.TAB,ConfigReader.getProperty("fakepass"));
         blueRentalPage.login2.click();
         ReusableMethods.bekle(3);
-        ReusableMethods.tumSayfaResmi();
+        ReusableMethods.tumSayfaResmi(result.getName());
         Assert.assertTrue(blueRentalPage.hataMesaji.isDisplayed());
         Driver.closeDriver();
     }
